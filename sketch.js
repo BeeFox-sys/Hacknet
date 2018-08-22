@@ -13,7 +13,7 @@ function draw() {
   rotateX(-0.65)
   rotateY(0.785)
   if(millis() < loadTime*1000){
-    if(frameCount % 2 == 0){
+    if(frameCount % 2 == 0 && hearts.length < 40){
       hearts.push(new HeartPeice(50+(hearts.length*10),100+(hearts.length*10),50 +(hearts.length*10),0.01))
     }
   }
